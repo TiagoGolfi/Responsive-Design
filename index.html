@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    
+    <script>
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function() {
+                const menu = document.querySelector(".menu nav ul");
+                const currentDisplay = window.getComputedStyle(menu).display;
+    
+                if (currentDisplay === 'flex') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'flex';
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+    
+<header>
+
+   <div class="container">
+
+    
+
+    <div class="menu">
+        <nav>
+            <div class="menuMobile">
+                <div class="mm_line"></div>
+                <div class="mm_line"></div>
+                <div class="mm_line"></div>
+            </div>
+            <ul>
+                <li class="active"> <a href="">HOME</a> </li>
+                
+                <li> <a href="">PROJETOS</a> </li>
+                <li> <a href="">TECNOLOGIAS</a> </li>
+                <li> <a href="">SOBRE</a> </li>                
+            </ul>
+        </nav>
+    </div>
+
+   </div> 
+
+</header>
+
+<section id="banner">
+
+    <div class="container column">
+        <div class="banner_headline">
+            <h1>Experiência de alto nível</h1>
+            <h2>Um modelo responsivo 
+                perfeito para todos os tamanhos de tela
+            </h2>
+        </div>
+    
+    <div class="banner_options">
+
+        <div class="banner1">
+            <div class="banner_tittle">Tecnologias</div>
+            <div class="banner_desc">Tecnologias</div>
+            <a href="">Leia mais</a>
+            
+        </div>
+
+        <div class="banner2">
+            <div class="banner_tittle">Projetos</div>
+            <div class="banner_desc">Projetos</div>
+            <a href="">Leia mais</a>
+        </div>
+            
+        <div class="banner3">
+            <div class="banner_tittle">Desenvolvido em 2024</div>
+        </div>
+
+     </div>
+
+    </div>
+
+
+</section>
+
+<section id="geral">
+    <div class="container">
+        <section>
+            <div class="widget">
+                <div class="widget_title">
+                    <div class="widget_title_text">Últimas Notícias</div>
+                    <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body flex">
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/software-developer-6521720_640.jpg" alt="">
+                            </div>
+                            <div class="news_title">
+                                APIs RESTful
+                            </div>
+
+                            <div class="news_resume">
+                                As APIs RESTful são a espinha dorsal das comunicações entre sistemas modernos. Com elas, sistemas diferentes podem 
+                                trocar dados de forma eficiente e escalável, seja para integrar aplicativos móveis ou para alimentar dashboards em tempo real.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/code-1839406_640.jpg" alt="">
+                            </div>
+                            <div class="news_title">
+                                Desenvolvimento
+                            </div>
+
+                            <div class="news_resume">
+                                Construir interfaces que encantam é o foco do desenvolvimento frontend. Usamos ferramentas modernas como React e 
+                                Vue.js para criar sites e aplicações que são não apenas bonitos, mas também rápidos e responsivos. A experiência do usuário é nossa prioridade.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/computer-4795762_640.jpg" alt="">
+                            </div>
+                            <div class="news_title">
+                                Banco de Dados NoSQL
+                            </div>
+
+                            <div class="news_resume">
+                                Automatizar o ciclo de vida de desenvolvimento é o coração do DevOps. Ferramentas como Docker, Kubernetes e CI/CD transformam a maneira como desenvolvemos, 
+                                testamos e implantamos aplicações, permitindo entregas rápidas e confiáveis em produção.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/earth-3537401_640.jpg" alt="">
+                            </div>
+                            <div class="news_title">
+                                DevOps e Automação
+                            </div>
+
+                            <div class="news_resume">
+                                Em um mundo de dados não estruturados, bancos de dados NoSQL, como MongoDB e Firebase, são a escolha ideal. Eles permitem armazenamento flexível e
+                                 alta performance para aplicações que lidam com grandes volumes de dados e requerem escalabilidade sem complicação.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/computer-767776_1280.jpg" alt="">
+                            </div>
+                            <div class="news_title">
+                                Testes Automatizados
+                            </div>
+
+                            <div class="news_resume">
+                                Os testes automatizados garantem qualidade e eficiência no desenvolvimento. Ferramentas como Selenium e Jest permitem 
+                                a detecção de falhas antes do lançamento, melhorando a confiabilidade e reduzindo o retrabalho.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/keyboard-6105750_1280.jpg" alt="">
+                            </div>
+                            <div class="news_title">
+                                Cloud Computing
+                            </div>
+
+                            <div class="news_resume">
+                                A computação em nuvem oferece escalabilidade e acessibilidade para aplicações modernas. Plataformas como AWS e 
+                                Azure permitem hospedar e gerenciar serviços com alta disponibilidade e flexibilidade, acompanhando o crescimento da sua aplicação.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/coding-1853305_1280.jpg">
+                            </div>
+                            <div class="news_title">
+                                Integração Contínua e Entrega Contínua (CI/CD)
+                            </div>
+
+                            <div class="news_resume">
+                                CI/CD acelera o ciclo de desenvolvimento com testes e lançamentos automatizados, garantindo entregas constantes e de qualidade. 
+                                Ferramentas como Jenkins e GitLab CI otimizam processos e minimizam erros em produção.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">07 NOV</div>
+                                <div class="news_comments">24</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="Assets/IMG/monitor-933392_1280.jpg" alt="">
+                            </div>
+                            <div class="news_title">
+                                Cibersegurança
+                            </div>
+
+                            <div class="news_resume">
+                                Garantimos segurança de ponta a ponta com práticas robustas de cibersegurança. Da proteção de dados ao controle de acesso, usamos 
+                                ferramentas como firewalls e criptografia para defender aplicações contra ameaças e vulnerabilidades.
+                            </div>
+                        </a>
+                    </article>
+
+                   
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div class="widget">
+                <div class="widget_title">
+                    <div class="widget_title_text">Departamentos</div>
+                    <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body">
+                    
+                </div>
+            </div>
+            <div class="widget">
+                <div class="widget_title">
+                    <div class="widget_title_text">Marque uma consultoria</div>
+                    <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body">
+                    
+                </div>
+            </div>
+        </aside>
+    </div> 
+</section>
+
+<footer>
+    <div class="container flexColumn">
+        <div class="footer_menu">
+            <div class="fm_1">
+                <a href="">
+                    
+                </a>
+            </div>
+            <div class="fm_2">
+                <a href="">
+                   
+                </a>
+            </div>
+            <div class="fm_3">
+                <a href="">
+                    
+                </a>
+            </div>
+        </div>
+
+        <div class="footer_area">
+
+            <div class="footer_areaitem">
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Experiência de alto nível</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="footer_areaitem">
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Últimas postagens</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_areaitem">
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Últimos Tweets</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer_copy">
+            Feito por <a href="https://www.linkedin.com/in/tiago-golfi-batista/" target="_blank">Tiago Golfi Batista</a>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
